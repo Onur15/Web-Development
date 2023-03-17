@@ -1,0 +1,47 @@
+#container {
+    width: 200px;
+    height: 200px;
+    background: rgb(44, 207, 107);
+    position: relative;
+}
+
+#box {
+    width: 50px;
+    height: 50px;
+    background: rgb(219, 42, 66);
+    position: absolute;
+}
+
+#up {
+    border: solid green;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin: 5px;
+    transform: rotate(-135deg);
+}
+
+#down {
+    border: solid red;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    transform: rotate(45deg);
+}
+
+#stop {
+    display: inline-block;
+    width: fit-content;
+    height: 35px;
+    background: goldenrod;
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify, center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
