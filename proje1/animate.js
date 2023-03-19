@@ -7,11 +7,15 @@ var box = document.getElementById("box");
 box.style.top = (container.clientHeight - box.clientHeight) / 2 + "px";
 document.addEventListener('keypress', (event) => {
     var name = event.key;
+    var code = event.code;
     if (name == "w") {
-        up()
+        up();
     }
     if (name == "s") {
-        down()
+        down();
+    }
+    if (code == "Space") {
+        stop();
     }
 });
 

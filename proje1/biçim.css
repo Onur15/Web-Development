@@ -51,3 +51,16 @@
     margin: 5px 0 0 2px;
     text-align: center;
 }
+
+#keys {
+    width: 230px;
+    display: flex;
+}
+
+.key:first-child {
+    margin: 0 50px;
+}
+
+.key:not(:first-child) {
+    margin: 0 16px;
+}
