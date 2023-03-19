@@ -1,0 +1,53 @@
+#container {
+    width: 220px;
+    height: 60px;
+    padding: 5px;
+    background: rgb(104, 230, 235);
+    position: relative;
+}
+
+#box {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: rgb(219, 42, 66);
+    position: absolute;
+}
+
+#buttons {
+    display: flex;
+}
+
+#up {
+    border: solid green;
+    border-style: groove;
+    border-width: 0 6px 6px 0;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    margin: 15px 15px 0 15px;
+    transform: rotate(-135deg);
+}
+
+#down {
+    border: solid red;
+    border-style: ridge;
+    border-width: 6px 0px 0px 6px;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    margin: 4px 0 0 0;
+    transform: rotate(-135deg);
+}
+
+#stop {
+    display: inline-block;
+    border-radius: 5px;
+    width: fit-content;
+    height: 35px;
+    background: goldenrod;
+    font-size: medium;
+    font-weight: bold;
+    margin: 5px 0 0 2px;
+    text-align: center;
+}
