@@ -42,7 +42,7 @@
 
 #stop {
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 0px;
     width: fit-content;
     height: 35px;
     background: goldenrod;

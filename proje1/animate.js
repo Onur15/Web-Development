@@ -4,10 +4,16 @@ var pos = 0;
 var value = 1;
 var container = document.getElementById("container");
 var box = document.getElementById("box");
+var stopButton = document.getElementById("stop");
+var upButton = document.getElementById("up");
+var downButton = document.getElementById("down");
 box.style.top = (container.clientHeight - box.clientHeight) / 2 + "px";
 document.addEventListener('keypress', (event) => {
     var name = event.key;
     var code = event.code;
+    stopButton.blur();
+    downButton.blur();
+    upButton.blur();
     if (name == "w") {
         up();
     }
@@ -36,26 +42,30 @@ function move() {
 }
 
 function up() {
-    if (ms > 5) {
-        ms -= 5;
-        t = clearInterval(t);
-        t = setInterval(move, ms);
-        console.log(ms);
-    } else if (Math.abs(value) < box.clientWidth / 2) {
-        value += 1 * Math.sign(value);
-        console.log(`Value: ${Math.abs(value)}`);
+    if (t != undefined) {
+        if (ms > 5) {
+            ms -= 5;
+            t = clearInterval(t);
+            t = setInterval(move, ms);
+            console.log(ms);
+        } else if (Math.abs(value) < box.clientWidth / 2) {
+            value += 1 * Math.sign(value);
+            console.log(`Value: ${Math.abs(value)}`);
+        }
     }
 }
 
 function down() {
-    if (Math.abs(value) > 1) {
-        value -= 1 * Math.sign(value);
-        console.log(`Value: ${Math.abs(value)}`);
-    } else {
-        ms += 5;
-        t = clearInterval(t);
-        t = setInterval(move, ms);
-        console.log(ms);
+    if (t != undefined) {
+        if (Math.abs(value) > 1) {
+            value -= 1 * Math.sign(value);
+            console.log(`Value: ${Math.abs(value)}`);
+        } else {
+            ms += 5;
+            t = clearInterval(t);
+            t = setInterval(move, ms);
+            console.log(ms);
+        }
     }
 }
 
