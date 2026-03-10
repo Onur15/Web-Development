@@ -1,0 +1,106 @@
+body {
+    background: ghostwhite;
+}
+h1 {
+    position: relative;
+    left: -40px;
+    text-align: center;
+    text-decoration: underline;  
+    width: 100%;
+}
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 200px;
+}
+div {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+p {
+    margin: 0;
+    font-weight: 700;
+}
+.filler {
+    width: 95px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.desc{
+    margin: 0;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    top: -80px;
+    left: 10px;
+}
+
+.red {
+    background: #FF0000;
+}
+
+.green {
+    background: #00FF00;
+}
+
+.blue {
+    background: #0000FF;
+}
+
+.yellow {
+    background: #FFFF00;
+}
+
+.cyan {
+    background: #00FFFF;
+}
+
+.magenta {
+    background: #FF00FF;
+}
+
+.orange {
+    background: rgb(255,127,0);
+}
+
+.rose {
+    background: rgb(255,0,127);
+}
+
+.chartreuse {
+    background: rgb(127,255,0);
+}
+
+.spring {
+    background: rgb(0,255,127);
+}
+
+.azure {
+    background: rgb(0,127,255);
+}
+
+.violet {
+    background: rgb(127,0,255);
+}
+.plus {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin: 0 5px
+}
+
+.colorball {
+    margin: 10px 0 0 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
